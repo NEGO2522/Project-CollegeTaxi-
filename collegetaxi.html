@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How College Taxi Works? </title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="font-sans bg-gray-100 text-gray-900">
+      
+        <header class="bg-white shadow-md">
+            <div class="container mx-auto px-4 py-4">
+             <nav class="bg-gray-50 shadow-sm sticky top-0 z-50">
+                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                   <div class="flex justify-between h-16 items-center">
+                     
+                     <!-- Logo -->
+                     <div class="flex-shrink-0 flex items-center">
+                        <a href="index.html">
+                       <img class="h-20" src="2.png" alt="CollegeTaxi Logo" />
+                        </a>
+                     </div>
+               
+                     <!-- Navigation Links -->
+                     <div class="hidden md:flex space-x-8 items-center">
+                       <a href="#" class="text-gray-700 hover:text-blue-600 transition-all">Book a CollegeTaxi</a>
+                       <div class="relative group">
+                         <button class="flex items-center text-gray-700 hover:text-blue-600 transition-all">
+                           Cities
+                           <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                           </svg>
+                         </button>
+                         <!-- Dropdown -->
+                         <div class="absolute hidden group-hover:block bg-white shadow-md rounded-md mt-2 w-48 py-2 z-10">
+                           <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Jaipur</a>
+                           <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Jodhpur</a>
+                           <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Udaipur</a>
+                           <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Ajmer</a>
+                           <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Kishangarh</a>
+                           <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Jhunjhunu</a>
+                           <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Bikaner</a>
+                           <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Bharatpur</a>
+                         </div>
+                       </div>
+               
+                       <!-- Search Bar -->
+                       <div>
+                         <input type="text" placeholder="Ready to Go?" class="border border-gray-300 rounded-md px-3 py-2 w-48 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                       </div>
+               
+                       <!-- About Dropdown -->
+                       <div class="relative group">
+                         <button class="flex items-center text-gray-700 hover:text-blue-600 transition-all">
+                           About
+                           <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                           </svg>
+                         </button>
+                         <div class="absolute hidden group-hover:block bg-white shadow-md rounded-md mt-2 w-40 py-2 z-10">
+                           <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Our Story</a>
+                           <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Careers</a>
+                           <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+                         </div>
+                       </div>
+                     </div>
+               
+                     <!-- Login/Signup Button -->
+                     <div class="flex items-center">
+                       <a href="login.html" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-all">
+                         Login/Signup
+                       </a>
+                     </div>
+               
+                   </div>
+                 </div>
+               </nav>
+               
+            </div>
+         </header>
+      <!-- main section -->
+
+      <main>
+        <div class="bg-white-100 p-8 rounded-lg max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-10">
+              
+              <!-- Left Side: Text -->
+              <div class="flex-1">
+                <h1 class="text-4xl font-bold mb-4 text-gray-800">How CollegeTaxi Works</h1>
+                <p class="text-gray-600 mb-6">
+                  Understanding how CollegeTaxi connects students and drivers can enhance your experience.
+                  Scroll to learn how the app and website work, or request a ride now by entering your pickup
+                  and drop-off locations below.
+                </p>
+                <div class="flex items-center">
+                    <input type="text" placeholder="Enter locations" id="locations"
+                    class="border border-gray-300 rounded-lg px-4 py-2 w-350 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                  <label for="locations" class="hidden">
+                  </label>
+                </div>
+                <br>
+                <div class="flex items-center">
+                    <input type="text" placeholder="Enter Destination" id="destination"
+                    class="border border-gray-300 rounded-lg px-4 py-2 w-250 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    <label for="destination" class="hidden"></label>
+                </div>
+              </div>
+          
+              <!-- Right Side: Image -->
+              <div class="flex-1">
+                <img src="Logo.png" alt="CollegeTaxi Logo"
+                  class="w-full max-w-md mx-auto rounded-2xl shadow-lg">
+              </div>
+            </div>
+          </div>
+    <!-- Another Seciton  -->
+          <div class="w-full bg-white-100 py-12 px-4 md:px-12">
+            <div class="flex flex-col lg:flex-row items-center  gap-8 max-w-screen-xl mx-auto ">
+              
+              <!-- Text Section -->
+              <div class="w-full lg:w-1/3 text-center lg:text-left">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 whitespace-nowrap">A quick Guide To CollegeTaxi</h2>
+                <p class="text-gray-700 text-base leading-relaxed whitespace-nowrap">
+                  Here's how the CollegeTaxi app and collegetaxi.com connect drivers and students on demand step by step.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!--  Another Section -->
+          <div class="container mx-auto px-4 py-8">
+            <!-- Section 1 -->
+            <section class="flex flex-col md:flex-row items-center gap-8 mb-12">
+              <div class="md:w-1/2 flex justify-center">
+                <img src="guide1.png" alt="College Taxi" class="w-full max-w-sm rounded-lg shadow-md">
+              </div>
+              <div class="md:w-1/2 text-center md:text-left">
+                <h4 class="text-2xl font-semibold mb-3 text-gray-800">
+                  Introducing CollegeTaxi: Ride-Sharing for Students
+                </h4>
+                <p class="text-gray-700 text-base">
+                  CollegeTaxi solves student transport challenges with affordable ridesharing. Verification ensures only genuine students join.
+                </p>
+              </div>
+            </section>
+          
+            <!-- Section 2 -->
+            <section class="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div class="md:w-1/2 flex justify-center">
+                <img src="guide2.png" alt="Verification" class="w-full max-w-sm rounded-lg shadow-md">
+              </div>
+              <div class="md:w-1/2 text-center md:text-left">
+                <h4 class="text-2xl font-semibold mb-3 text-gray-800">
+                  Sign-Up & Verification: Keeping it Student-Only
+                </h4>
+                <p class="text-gray-700 text-base">
+                  Students register using their official college email ID. Verification maintains a trusted, exclusive group of users.
+                </p>
+              </div>
+            </section>
+          </div>
+          
+
+          <!-- Another Section -->
+          <div class="bg-white-100 text-gray-800 py-12 px-6">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+              
+              <!-- Image Content (Now on the Left) -->
+              <div class="md:w-1/2 flex justify-center">
+                <img src="guide3.png" alt="Commute Guide" class="w-full max-w-sm rounded-lg shadow-md">
+              </div>
+          
+              <!-- Text Content (Now on the Right) -->
+              <div class="md:w-1/2 space-y-8 text-center md:text-left">
+                <h2 class="text-3xl font-semibold">
+                  Daily Commute Details: Tailoring Your Ride
+                </h2>
+          
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div>
+                    <h4 class="text-lg font-semibold mb-2">Starting Location</h4>
+                    <p class="text-gray-600">Enter where your commute begins each day.</p>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold mb-2">Destination</h4>
+                    <p class="text-gray-600">Select college, hostel, or any regular endpoint.</p>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold mb-2">Travel Time</h4>
+                    <p class="text-gray-600">Choose your preferred departure or arrival time.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Another Section -->
+          
+        <div class="bg-white-100 py-12 px-6">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+              
+              <!-- Text Section (Left) -->
+              <div class="md:w-1/2 text-gray-800 space-y-8">
+                <h2 class="text-3xl font-semibold">
+                  Safety & Community: Ride Together, Stay Safe
+                </h2>
+          
+                <div class="space-y-6">
+                  <div class="flex items-start gap-4">
+                    <div class="w-4 h-4 mt-1 rounded-full border-2 border-gray-400"></div>
+                    <div>
+                      <h4 class="text-lg font-semibold">Safety Features</h4>
+                      <p class="text-gray-600">App includes emergency contacts and ride tracking.</p>
+                    </div>
+                  </div>
+          
+                  <div class="flex items-start gap-4">
+                    <div class="w-4 h-4 mt-1 rounded-full border-2 border-gray-400"></div>
+                    <div>
+                      <h4 class="text-lg font-semibold">Trusted Community</h4>
+                      <p class="text-gray-600">Only verified students ensure safer sharing experiences.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Image Section (Right) -->
+              <div class="md:w-1/2 flex justify-center">
+                <img src="guide4.png" alt="Safety and Community" class="w-full max-w-md rounded-lg shadow-md">
+              </div>
+          
+            </div>
+          </div>
+          
+          
+      </main>
+      <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+            <!-- CollegeTaxi logo and About -->
+            <div>
+              <h2 class="text-2xl font-bold mb-4">CollegeTaxi</h2>
+              <p class="text-gray-400">Get easy rides to and from college, with comfort and convenience.</p>
+            </div>
+          
+            <!-- Company Links -->
+            
+    
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Company</h3>
+              <ul class="space-y-2 text-gray-400">
+                <li><a href="#" class="hover:text-white">About Us</a></li>
+                <li><a href="#" class="hover:text-white">Cities</a></li>
+                <li><a href="#" class="hover:text-white">Blog</a></li>
+                <li><a href="#" class="hover:text-white">Careers</a></li>
+              </ul>
+            </div>
+          
+            <!-- Products -->
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Products</h3>
+              <ul class="space-y-2 text-gray-400">
+                <li><a href="#" class="hover:text-white">Drive</a></li>
+                <li><a href="#" class="hover:text-white">Ride</a></li>
+                <li><a href="#" class="hover:text-white">Students</a></li>
+                <li><a href="#" class="hover:text-white">Gift Cards</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-200 text-sm">
+            © 2025 CollegeTaxi. All rights reserved.
+          </div>
+           
+        </footer>
+    
+</body>
+</html>
